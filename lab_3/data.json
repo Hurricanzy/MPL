@@ -1,0 +1,13 @@
+{
+    "table_name": "my_table",
+    "fields": [
+        {"name": "user_id", "type": "SERIAL PRIMARY KEY"},
+        {"name": "username", "type": "VARCHAR(64) UNIQUE NOT NULL"},
+        {"name": "password", "type": "VARCHAR(128) NOT NULL"},
+        {"name": "created_at", "type": "TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP"}
+    ],
+    "values": [
+        {"username": "un1", "password": "111"},
+        {"username": "un23", "password": "2222"}
+    ]
+}
